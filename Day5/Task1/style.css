@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Serif Pro";
+}
+
+body {
+    width: 100%;
+    /* height: 4500px; */
+    background-color: #090909 !important;
+    color: white !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    margin-right: 300px !important;
+
+    justify-content: space-between !important;
+}
+
+.logo {
+    margin-left: 100px !important;
+}
+
+nav {
+    position: relative;
+}
+
+.nv {
+    position: absolute;
+    right: 250px;
+}
+
+.nav-link:hover {
+    color: #8a8484 !important;
+}
+
+#home {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+a {
+    color: white !important;
+}
+
+.navbar.bg-dark {
+  background-color: transparent !important;
+}
+
+#home {
+    /* width: 100%; */
+    height: 80vh;
+    align-items: left;
+    margin: auto;
+    background-image: url("./assets/home-Photoroom.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.concon {
+    margin: 250px 0;
+    position: absolute;
+    left: 50px;
+}
+
+.sec1-con h1 {
+    font-size:60px;
+    margin-bottom: 20px;
+}
+
+.sec1-con p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.sec1-con button {
+    width: 190px;
+    /* height: 50px; */
+    background-color: white;
+    border: none;
+    color: black;
+    /* font-size: 20px; */
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.our-website {
+    height: 300px;
+    background-color: #242424;
+    margin-top: 100px;
+    text-align: center;
+    padding: 25px 0;
+
+}
+
+.our-website h2 {
+    margin-top: 50px;
+    /* margin: 50px auto; */
+    color: #eee;
+     font-size: 25px;
+}
+
+.our-website p {
+    margin: 20px auto;
+    font-size: 19x;
+    max-width: 500px;
+    color: #8a8484;
+}
+
+#about {
+    background-color: #292828;
+    height: 550px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: s; */
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 800px;
+    /* font-size: 18px; */
+    /* line-height: 1.8; */
+     /* letter-spacing: 1.5px; */
+}
+
+.content-about {
+    order: 1;
+    width: 50%;
+}
+
+.img-about img {
+    width: 390px;
+    height: 400px;
+    /* order: 2; */
+    margin:  0 40px;
+
+}
+
+.content-about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.content-about p {
+    color: #8a8484;
+}
+
+.content-about hr {
+    border: none;
+    border-top: 1px solid #8a8484;
+    margin: 20px 0;
+    width: 50px;
+}
+#albums{
+     margin: 50px 0 ;
+      height: fit-content;
+}
+.album {
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px 0;
+   
+    width: 100vw;
+   
+}
+
+.album p {
+    color: #8a8484;
+    margin-bottom: 30px;
+
+}
+
+.album ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.album ul li {
+    margin: 0 20px;
+}
+
+.album ul li a {
+    color: #8a8484;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.album ul li a:hover {
+    color: white;
+}
+
+.album {
+  /* background-color: #292828; */
+  margin-top: 100px;
+  text-align: center;
+  padding: 50px 20px;
+  width: 100%;
+}
+
+.album p {
+  color: #8a8484;
+  margin-bottom: 30px;
+}
+
+.album ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.album ul li a {
+  color: #8a8484;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.album ul li a:hover {
+  color: white;
+}
+
+.album-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  padding: 0 20px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.album-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #111;
+}
+
+.album-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+  transition: transform 0.3s ease;
+}
+
+.album-item .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.album-item .overlay i {
+  font-size: 24px;
+  color: white;
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.album-item:hover img {
+  transform: scale(1.1);
+}
+
+.album-item:hover .overlay {
+  opacity: 1;
+}
+
+.album-item .overlay i:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.2);
+}
+
+.album-item-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.album-item-3 {
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start:2 ;
+}
+/* 
+#albums {
+    position: relative;
+} */
+
+.album-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#albums button {
+  background-color: #292828;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+#albums button:hover {
+  background-color: #444;
+}
+
+#blog {
+  background-color: #292828;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.header-blog p {
+  color: #8a8484;
+  margin-bottom: 20px;
+}
+
+.latest-news {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.article {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 360px;
+  width: 100%;
+  text-align: left;
+}
+
+.article h3 {
+  margin-bottom: 10px;
+}
+
+.article p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.bb {
+  background-color: transparent;
+  color: #8a8484;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.bb i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.bb:hover i {
+  transform: translateX(5px);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer img {
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+footer p {
+  margin: 10px 0 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+footer ul li a:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width:990px) {
+    .nv {
+        position: absolute;
+        right: 70px;
+    }
+
+    .concon {
+        margin: 250px 10px 0 0;
+        position: absolute;
+        /* left: 200px; */
+        /* width: 600px; */
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .navbar-brand {
+        margin-left: 0px !important;
+    }
+
+    button {
+        width: 170px !important;
+        height: 60px;
+    }
+
+    .navbar-toggler {
+        width: min-content !important;
+    }
+
+    .concon {
+        margin-top: 35%;
+    }
+    #about {
+    flex-direction: column !important;
+    padding: 30px 15px;
+    height: auto;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column !important;
+    margin-top: 80px;
+    padding: 0 10px;
+  }
+
+  .content-about {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+
+  .img-about img {
+     width:350px;
+     height: 500px;
+    margin: auto;
+    
+  }
+
+  .about h2 {
+    font-size: 24px;
+    margin: 50px 0;
+    text-align: left;
+  }
+
+  .about p,
+  .about hr {
+    font-size: 16px;
+    margin: 15px auto;
+    text-align: left;
+  }
+  .album-container{
+    display: block;
+    width: 80vw;
+    
+  }
+.album-container img{
+     margin: 20px 0;
+}
+
+.album-item .overlay {
+     /* width: 400px; */
+     height: 100%;
+}
+ .album ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .album ul li {
+    margin: 5px;
+  }
+  .blog{
+    margin-top:auto;
+  }
+  .album-btn {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #albums button {
+    width: 80%;
+    max-width: 300px;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+
+
+}

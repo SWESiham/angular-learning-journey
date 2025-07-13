@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 100px;
+    background-color: rgb(164, 126, 199);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+@keyframes shadow{
+    0%{
+        box-shadow: rgba(252, 39, 39, 0.56) -1px 22px 80px 9px;
+    }
+    40%{
+        box-shadow: rgba(100, 196, 156, 0.56) -1px 22px 80px 9px;
+    }
+    60%{
+        box-shadow: rgba(26, 11, 95, 0.56) -1px 22px 80px 9px;
+    }
+    
+    80%{
+        box-shadow: rgba(10, 136, 194, 0.56) -1px 22px 80px 9px;
+    }
+    100%{
+        box-shadow: rgba(196, 100, 167, 0.56) -1px 22px 80px 9px;
+    }
+}
+button:hover{
+    transition: all 0.7s ease-in-out;
+    animation: shadow 4s infinite;
+}

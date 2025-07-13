@@ -1,0 +1,116 @@
+body{
+    background-color: #021f3f;
+    color: white;
+    font-family: Arial, sans-serif;
+   
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    
+}
+nav{
+    /* background-color: #0b3d91; */
+    padding: 5px;
+    position: relative;
+     font-weight: 600;
+    
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.name{
+    display: inline;
+    margin-right: 50px;
+}
+.login{
+    position: absolute;
+    right: 150px;
+    margin-top: 5px;
+}
+.join{
+    position: absolute;
+    right: 0;
+    
+}
+.join button{
+    background-color: #5a81c5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.hero{
+    text-align: center;
+    margin-top: 70px;
+}
+.hero button{
+    background-color: #76b5c5;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: solid transparent;
+    margin: 20px;
+}
+.hero h1{
+    width: 400px;
+    /* font-size: 2.5em; */
+    margin:50px auto;
+    font-size:50px;
+}
+.hero a{
+    color: #76b5c5;
+}
+.hero h5{
+    /* width: 200px; */
+    font-size: 1em;
+    /* margin:10px auto; */
+    color: gray;
+    /* font-size:20px; */
+    font-weight: 100;
+}
+.hero .btn{
+    background-color: transparent;
+    
+    border-color: #76b5c5;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 20px;
+
+}
+.card{
+    background-color: white;
+    padding: 40px;
+    width: 300px;
+    /* border-radius: 10px; */
+    /* text-align: center; */
+    color: black;
+    position: relative;
+}
+hr{
+    border: 1px solid brown;
+    width: 50px;
+    position: absolute;
+    left: 50px;
+
+    margin-top: -10px;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.card p{
+    margin-top: 50px;
+    color: gray;
+   
+}
