@@ -10,11 +10,7 @@ console.log("New Details: ", newDetails);
 
 
 function calcAvg(...nums){
-    let sum = 0;
-    for (let i = 0; i < nums.length; i++) {
-        sum += nums[i];
-    }
-    return sum / nums.length;
+    return nums.reduce((acc, num) => acc + num, 0) / nums.length;
 }
 console.log(calcAvg(10, 20, 30, 40, 50));
 
@@ -69,4 +65,5 @@ console.log("Perfect Score: ",perfectScore)
 
 var str = 'hello';
 let arr = [...str];
-console.log(arr);
+console.log("String: ",str);
+console.log("Array: ",arr);
