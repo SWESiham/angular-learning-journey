@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day8 - Task1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="flex-row">
+                <label for="studName">Name</label>
+                <input type="text" placeholder="Student Name" name="name" id="studName">
+                <span class="error" id="nameError"></span>
+              </div>
+              
+              <div class="flex-row">
+                <label for="studAge">Age</label>
+                <input type="number" placeholder="Student Age" name="age" id="studAge">
+                <span class="error" id="ageError"></span>
+              </div>
+              
+              <div class="flex-row">
+                <label for="studEmail">Email</label>
+                <input type="text" placeholder="Student Email" name="email" id="studEmail">
+                <span class="error" id="emailError"></span>
+              </div>
+              
+              <div class="flex-row">
+                <label for="studPassword">Password</label>
+                <input type="text" placeholder="Student Password" name="password" id="studPassword">
+                <span class="error" id="passwordError"></span>
+              </div>
+              
+            <input type="submit" value="Submit" id="btn">
+
+        </form>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
