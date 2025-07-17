@@ -46,7 +46,26 @@ input{
     height: 70px;
     border-radius: 50%;
     background-color: gray;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 
+p{
+    /* margin-left: 50px; */
+    
+}
+#ready{
+    color: red;
+    font-size: 30px;
+    visibility: hidden;
+}
+#steady{
+    color: yellow;
+    font-size: 30px;    
+    visibility: hidden;
+}
+#go{
+    color: green;
+    font-size: 30px;
+    visibility: hidden;
+}
