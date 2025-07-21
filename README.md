@@ -24,7 +24,11 @@ Starting with **HTML**, **CSS**, and **JavaScript (ES6)** to build a strong foun
 - **Day 6:** JavaScript basics (alerts, functions)  
 - **Day 7:** JS practice (games: Character, Ready-Steady-Go, FizzBuzz)  
 - **Day 8:** Form with LocalStorage + Manual Slider  
-- **Day 9:** ES6 features: Spread Operator, filter, map, some, every  
+- **Day 9:** ES6 features:  Spread Operator, filter, map, some, every  
+- **Day 10:** ES6 features  Arrow functions, Generator functions, Delegated iteration
+- **Day 11:** ES6 features: Modules (import/export), OOP (Classes & Inheritance), Private fields, Private variables, Public methods, Privileged methods.
+
+ 
 
 ---
 ## 📌 Future Plans
