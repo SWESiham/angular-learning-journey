@@ -66,4 +66,4 @@ console.log("Perfect Score: ",perfectScore)
 var str = 'hello';
 let arr = [...str];
 console.log("String: ",str);
-console.log("Array: ",arr);
+console.log("Array: ", arr);

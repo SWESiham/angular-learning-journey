@@ -26,6 +26,7 @@
 //          console.log(i+" is odd")
 //     }
 // }
+
 var num1 = Number(prompt("Enter a 1st num"));
 var num2 = Number(prompt("Enter a 2nd num"));
 var op = prompt("Enter a operation  (+, -, *, /, %)");
