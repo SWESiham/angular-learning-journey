@@ -1,4 +1,5 @@
 var itemList = []
+var YOUR_API_KEY;
 function display(){
     var main=document.querySelector('main')
     main.innerHTML=""
@@ -20,7 +21,7 @@ function display(){
 
 function getNews(category) {
     const request = new XMLHttpRequest();
-    request.open('GET', ` https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=06f4ff2f17e042f199c8ed634347b6b4`);
+    request.open('GET', ` https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=YOUR_API_KEY`);
     request.send();
     request.addEventListener("readystatechange", function () {
         if (request.readyState == 4) {
