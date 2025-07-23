@@ -1,0 +1,10 @@
+.container-fluid {
+    width: 95%;
+    margin: auto;
+  }
+  .img-fluid{
+    height: 30%;
+  }
+.d-flex{
+    justify-content: center;
+}

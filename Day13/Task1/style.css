@@ -1,0 +1,37 @@
+.container{
+    margin-top: 20px;
+}
+.cards p{
+    text-align: left;
+}
+i{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: white;
+    margin: 0 auto 10px !important;
+}
+body{
+    /* width: 100%; */
+    box-sizing: border-box;
+
+}
+.main-bg{
+   
+    background-image: url(.//assets/be\ the\ best\ version\ of\ yourself.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100% !important;
+    height: 60vh !important;
+    color: white;
+    margin: auto !important;
+    text-align: center;
+    position: relative;
+}
+.content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
