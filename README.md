@@ -92,13 +92,11 @@ Starting with **HTML**, **CSS**, and **JavaScript (ES6)** to build a strong foun
 
 ## 📌 Future Plans
 
-- Transition from **HTML/CSS prototypes** → Full **Angular Application**.
+- Transition from **HTML/CSS/JS prototypes** → Full **Angular Application**.
 - Implement:
-  - Angular Components
   - Routing
   - Services & Dependency Injection
   - CRUD with API
-- Add **TypeScript** for better type safety.
 
 ---
 
@@ -109,4 +107,4 @@ Please [open an issue](https://github.com/SWESiham/angular-learning-journey/issu
 
 ---
 
-Stay tuned as this project grows! 🌱
+Stay tuned as this journey grows! 🌱
