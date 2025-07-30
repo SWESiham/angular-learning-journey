@@ -1,8 +1,9 @@
 //Ajax=>mlhttprequest
 var itemList=[]
+var YOUR_API_KEY;
 //function getNews(category){
 //     const request=new XMLHttpRequest();
-// request.open('GET',`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=101daae1bb1d43d4af588e27df007cee`);
+// request.open('GET',`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=YOUR_API_KEY`);
 // request.send();
 // request.addEventListener("readystatechange",function(){
 //     if(request.readyState==4){
@@ -17,7 +18,7 @@ var itemList=[]
 // function getHealth(){
 // return new Promise((resolve,reject)=>{
 //             const request=new XMLHttpRequest();
-// request.open('GET',`https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=101daae1bb1d43d4af588e27df007cee`);
+// request.open('GET',`https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=YOUR_API_KEY`);
 // request.send();
 // request.addEventListener("readystatechange",function(){
 //     if(request.readyState==4){
@@ -41,7 +42,7 @@ var itemList=[]
 // function getBusiness(){
 // return new Promise((resolve,reject)=>{
 //             const request=new XMLHttpRequest();
-// request.open('GET',`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=101daae1bb1d43d4af588e27df007cee`);
+// request.open('GET',`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=YOUR_API_KEY`);
 // request.send();
 // request.addEventListener("readystatechange",function(){
 //     if(request.readyState==4){
@@ -65,7 +66,7 @@ var itemList=[]
 
 async function getSports(){
    try{
-     const request = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=8526bebba89747a58c4e0f9e0fd85f28`,{
+     const request = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=YOUR_API_KEY`,{
         method:'GET'
     })
     const response=await request.json();
