@@ -1,0 +1,75 @@
+<!-- <p>tracks-of-iti works!</p> -->
+<!-- ---------------------- -->
+<h1 class="text-center my-5">Tracks of ITI</h1>
+
+<div class="mb-3">
+    <!-- <label for="" class="form-label">Tracks</label> -->
+    <div class="mb-3">
+        <select class="form-select form-select-lg w-50 mx-auto " name="selectTrack" id="" [(ngModel)]="selectedTrack" (ngModelChange)="trackErrorMsg=''"
+            #track>
+            <option disabled selected value="">Select a Track</option>
+            <option value=".Net">.Net</option>
+            <option value="Mearn">Mearn</option>
+            <option value="Testing">Testing</option>
+            <option value="angular">angular</option>
+            <option value="php - laravel">php - laravel</option>
+            <option value="react">react</option>
+
+        </select>
+        <div class="alert alert-danger mt-2 w-50 mx-auto" *ngIf="trackErrorMsg">{{ trackErrorMsg }}</div>
+        <div class="track-location w-50 text-center mx-auto fs-5 mt-3"
+            [ngStyle]="{ visibility : selectedTrack === '' ? 'hidden' : 'visible'}">
+            {{selectedTrack }} available at :
+
+            <div class="loca" *ngFor="let l of loc">
+                <p *ngIf="selectedTrack===l.track">{{l.location}}</p>
+            </div>
+        </div>
+
+
+
+        <div class=" mb-3 w-50 mx-auto">
+            <label for="" class="form-label">Enter Your Name</label>
+            <input type="text" class="form-control" name="userName" id="" aria-describedby="helpId" placeholder=""
+                [(ngModel)]="userName" #name   (ngModelChange)="nameErrorMsg=''"/>
+            <div class="alert alert-danger mt-2" *ngIf="nameErrorMsg">{{ nameErrorMsg }}</div>
+        </div>
+
+        <div class="mb-3 w-50 mx-auto">
+            <label for="" class="form-label">Enter Your Age</label>
+            <input type="text" class="form-control  " name="userAge" id="" aria-describedby="helpId" placeholder=""
+                [(ngModel)]="userAge" #age (ngModelChange)="ageErrorMsg=''" />
+
+            <div class="alert alert-danger mt-2" *ngIf="ageErrorMsg">{{ ageErrorMsg }}</div>
+        </div>
+
+        <div class="mb-3 w-50 mx-auto">
+            <button class="btn btn-success my-2" type="submit"
+                (click)="addUser()">Add</button>
+            <table class="table table-hover table-dark">
+                <thead *ngIf="users.length > 0">
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Track</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let u of users;let i = index">
+                        <th scope="row">{{i+1}}</th>
+                        <td>{{u.name}}</td>
+                        <td>{{u.age}}</td>
+                        <td>{{u.track}}</td>
+                        <td><a name="" id="" class="btn btn-danger" href="#" role="button"
+                                (click)="deleteUser(i)">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- <small id="helpId" class="form-text text-muted">Add</small> -->
+    </div>

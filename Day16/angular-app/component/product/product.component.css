@@ -1,0 +1,10 @@
+.row {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .col-4 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
